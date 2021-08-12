@@ -1,0 +1,15 @@
+@import "../common/colors";
+
+.map {
+	width: 80vw;
+	height: 60vh;
+
+	@media screen and (max-width: 600px) {
+		width: 93vw;
+		height: 70vh;
+	}
+}
+
+.contact-hero {
+	color: white;
+}

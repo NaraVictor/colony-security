@@ -1,0 +1,27 @@
+.team-card {
+	width: 200px;
+	height: 300px;
+	background-color: white;
+	overflow: hidden;
+}
+
+.team-card-image {
+	height: 220px;
+	margin-left: -10px;
+}
+
+.team-card-details {
+	bottom: 15px;
+	text-align: center;
+	margin-top: 18px;
+
+	& * {
+		padding: 0px;
+		margin: 0px;
+	}
+
+	& p {
+		font-size: 14px;
+		color: gray;
+	}
+}

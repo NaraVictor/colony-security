@@ -1,0 +1,29 @@
+@import "./colors";
+
+@mixin btn-core {
+	padding: 10px;
+	border: 0px solid $color-primary;
+	background-color: $color-primary;
+	color: white;
+	transition: all 0.25s linear;
+
+	&:hover {
+		background-color: $color-primary-dark;
+	}
+}
+
+.button {
+	@include btn-core();
+}
+
+.button-outline {
+	@include btn-core();
+	background-color: transparent;
+	color: #333;
+	border: 2px solid $color-primary;
+
+	&:hover {
+		color: #eee;
+		background-color: $color-primary;
+	}
+}

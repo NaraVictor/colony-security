@@ -1,0 +1,55 @@
+@import "../common/colors";
+
+.service-title {
+	text-align: center;
+
+	h3,
+	h4,
+	h5 {
+		font-size: 2rem;
+		font-weight: bold;
+		z-index: 800;
+		// position: relative;
+	}
+
+	img {
+		height: 200px;
+		z-index: 10;
+		position: absolute;
+		top: -10%;
+		left: 20%;
+		opacity: 0.7;
+	}
+}
+
+.service-img {
+	border-radius: 50%;
+	border: 8px solid #999;
+	height: 200px;
+	width: 200px;
+	display: flex;
+	position: absolute;
+	top: 65vh;
+	left: 15vw;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	overflow: hidden;
+
+	transition: all 0.25s linear;
+
+	&:hover {
+		border: 8px solid $color-primary-tint;
+		box-shadow: 0px 0px 15px rgba($color: #dc3d4b, $alpha: 0.5);
+	}
+
+	& img {
+		max-height: 150px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.service-img {
+		left: 20px;
+	}
+}

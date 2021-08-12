@@ -1,0 +1,191 @@
+// common
+@import "./sass/common/colors";
+@import "./sass/common/button";
+
+// components
+@import "./sass/components/navbar";
+@import "./sass/components/card";
+@import "./sass/components/serviceCard";
+@import "./sass/components/footer";
+
+// views
+@import "./sass/views/home";
+@import "./sass/views/about";
+@import "./sass/views/services";
+@import "./sass/views/contact";
+
+p,
+div,
+span,
+section,
+article {
+	// font-size: 1.2rem;
+	font-family: "Open Sans", sans-serif;
+	// font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu,
+	// 	Cantarell, "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+	font-weight: 300;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.hero {
+	// height: 70vh;
+	// width: 100%;
+	// background-size: cover;
+	// background-position: center center;
+	// background-repeat: no-repeat;
+
+	position: relative;
+	display: block;
+	padding: 100px !important;
+	top: -100px;
+	height: 80vh;
+	width: 100%;
+	background-color: #dc3d4b;
+	clip-path: ellipse(120% 100% at 40% 0%);
+}
+
+.home-hero {
+	height: 110vh;
+}
+
+.hero-mini {
+	background-color: purple;
+	height: 30vh;
+	width: 100%;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.section-brief {
+	font-size: 1.4rem;
+}
+
+.section-header {
+	text-transform: uppercase;
+	font-size: 4em;
+	font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.divider {
+	width: 100%;
+	// background-color: #ccc;
+	border-bottom: 1.5px solid #ccc;
+	// margin: 40px 0px;
+}
+
+.left-border {
+	border-left: 1px solid #aaa;
+}
+
+.bottom-border {
+	border-bottom: 1px solid #aaa;
+}
+
+.curve-up {
+	// position: relative;
+	z-index: 10;
+	width: 100%;
+	// min-height: 150px;
+	border-radius: 200vh 200vh 0% 0% / 20vh 20vh 0% 0%;
+}
+
+.section-social {
+	a {
+		color: white;
+
+		&:hover {
+			// position: absolute;
+			font-size: 25px;
+			transition: all 0.2s linear;
+		}
+	}
+}
+
+// colors
+.color-primary {
+	color: $color-primary;
+}
+
+.color-primary-dark {
+	color: $color-primary-dark;
+}
+
+// mobile
+@media screen and (max-width: 600px) {
+	.section-brief {
+		font-size: 1rem;
+	}
+
+	.section-header {
+		font-size: 3em;
+	}
+}
+
+// .sticky-wrapper {
+// 	position: relative;
+// 	z-index: 100;
+// 	width: 100%;
+// 	position: relative;
+// 	top: 0;
+// 	& + .site-blocks-cover {
+// 		// margin-top: 140px;
+// 		// margin-top: 96px;
+// 	}
+// 	.site-navbar {
+// 		transition: 0.3s all ease;
+// 	}
+// 	.site-navbar {
+// 		background: $color-black;
+// 		// border-bottom: 1px solid rgba($white, .2);
+// 		.site-logo {
+// 			width: 80px;
+// 			height: 80px !important;
+// 		}
+// 		ul {
+// 			li {
+// 				a {
+// 					color: rgba($color-black, 0.7) !important;
+// 					&.active {
+// 						color: $color-black !important;
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// 	&.is-sticky {
+// 		.site-navbar {
+// 			background: $color-light;
+// 			// border-bottom: 1px solid transparent;
+// 			box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.2);
+// 			.site-logo {
+// 				a {
+// 					color: $color-primary;
+// 				}
+// 			}
+// 			ul {
+// 				li {
+// 					a {
+// 						color: $color-black !important;
+// 						&.active {
+// 							color: $color-primary !important;
+// 						}
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// 	.shrink {
+// 		padding-top: 0px !important;
+// 		padding-bottom: 0px !important;
+// 		@media only screen and (max-width: 700px) {
+// 			padding-top: 30px !important;
+// 			padding-bottom: 30px !important;
+// 		}
+// 	}
+// }
